@@ -20,7 +20,22 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <style type="text/css">
+    .s1  >div{
+      width: 500px;
+      height: 100px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-left: 10px;
+      background-color: gray;
 
+    }
+  .s2 li+li{
+    color: gray;
+  }
+    </style>
+  }
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -32,7 +47,25 @@
      <h1>well done, Jim!</h1>
     </div>
 
+    <div class="s1">
+      <div>aa
+      <div>111</div>
+      </div>
+      <div>2</div>
 
+    </div>
+    <div class="s2">
+      <ul>
+         
+         <li>aaaa</li> 
+         <li>bbbb</li> 
+         <li>cccc</li> 
+         <li>dddd</li> 
+
+
+      </ul>
+
+    </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
