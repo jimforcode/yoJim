@@ -469,5 +469,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-tmod');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  //grunt.registerTask('default', ['tmod', 'watch']);
+  grunt.registerTask('default', ['tmod', 'watch']);
 };

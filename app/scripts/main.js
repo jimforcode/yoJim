@@ -1,1 +1,14 @@
-console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
+define(function(require, exports, module) {
+
+
+  var sayS ={
+
+
+  }
+  sayS.say=function(msg){
+  console.log(msg);
+  }
+
+  module.exports=sayS;
+ });
+

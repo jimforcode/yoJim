@@ -1,0 +1,2 @@
+/*TMODJS:{"version":2,"md5":"b145fc72c6e53ce797bbe71e26c7b002"}*/
+define(["../../template",""],function(a){return a("app/templates/index",function(a){"use strict";var b=this,c=(b.$helpers,b.$escape),d=a.well,e="";return e+="<section > ",e+=c(d),e+=" </section> ",new String(e)})});
