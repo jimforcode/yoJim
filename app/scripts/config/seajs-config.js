@@ -4,9 +4,15 @@
 seajs.config({
   //base: "../sea-modules/",
   alias: {
-    "jim": "templates/template",
-    "userController": "scripts/business/UserController",
-    "main":"scripts/main"
+
+
+
+    "template": "templates/template",
+    "routerMap":"scripts/config/routerMap",
+    "router":"scripts/config/router",
+    "director":"scripts/config/director",
+    "hashchange":"scripts/config/hashchange",
+    "main":"scripts/main",
   },
   // 变量配置
   vars: {

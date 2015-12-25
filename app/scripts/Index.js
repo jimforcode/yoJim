@@ -12,11 +12,7 @@ define(function(require, exports, module) {
     if (r != null) return unescape(r[2]); return null;
   }
 
-
-
-
- 	var userController = require('userController');
-  var template =require("jim");
+  var template =require("template");
   var user11={
     name:"aaaaa"
     },
@@ -34,10 +30,7 @@ define(function(require, exports, module) {
   console.log(user);
   $('#jim-header').html(user);
 
-  var main =  require('main');
-   userController.sayS(" J");
-  main.say(" main say ");
-  console.log("-----------------");
+
 
   console.log(" 参数获取: "+getQueryString('skip'));
   if(getQueryString('skip')=='detail'){
