@@ -81,7 +81,7 @@ module.exports = function (grunt) {
             '<%= config.app %>/images/{,*/}*',
             '.tmp/scripts/{,*/}*.js'
           ],
-          port: 9000,
+          port: 9001,
           server: {
             baseDir: ['.tmp', config.app],
             routes: {
@@ -353,7 +353,19 @@ module.exports = function (grunt) {
           src: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
         }]
-      }
+      },
+      dist2: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>',
+          dest: '<%= config.dist %>',
+          src: [
+            'templates/template.js'
+          ]
+        },]
+      },
+
     },
 
     // Generates a custom Modernizr build that includes only the tests you
@@ -392,7 +404,7 @@ module.exports = function (grunt) {
     tmod: {
       template: {
         src: 'app/templates/**/*.html',
-        dest: 'app/scripts/template.js',
+        dest: 'app/templates/template.js',
         options: {
           combo: true,
           syntax: 'simple',
@@ -415,6 +427,7 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
+      //'copy:dist2',
       'postcss',
       'browserSync:livereload',
       'watch'
