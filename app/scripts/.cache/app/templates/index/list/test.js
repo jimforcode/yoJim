@@ -1,2 +1,2 @@
-/*TMODJS:{"version":1,"md5":"e8f931e19bda3ba5e703e627083507d7"}*/
+/*TMODJS:{"version":2,"md5":"cd64838a85c8088387d9198ccef39193"}*/
 template('app/templates/index/list/test','test');

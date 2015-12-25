@@ -4,7 +4,7 @@
 seajs.config({
   //base: "../sea-modules/",
   alias: {
-    "jim": "scripts/template",
+    "jim": "templates/template",
     "userController": "scripts/business/UserController",
     "main":"scripts/main"
   },
