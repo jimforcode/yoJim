@@ -6,7 +6,13 @@ seajs.config({
   alias: {
     "jim": "templates/template",
     "userController": "scripts/business/UserController",
-    "main":"scripts/main"
+    "main":"scripts/main",
+
+
+
+
+    "hashchange": "scripts/jquery.ba-hashchange",
+
   },
   // 变量配置
   vars: {
