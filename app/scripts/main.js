@@ -11,11 +11,11 @@ var author = function () { console.log("author"); };
       };
 
       var routes = {
-        '/author': author,
-        '/books': [books, function() {
+        '/author': [author],
+        '/books': [books, require("extend"),function() {
           console.log("An inline route handler.");
         }],
-        '/books/view/:bookId': viewBook
+        '/books/view/:bookId': [viewBook, ISeaJs.use('./scripts/business/base/InfoController')]
       };
 
       var router = Router(routes);

@@ -4,14 +4,13 @@
 seajs.config({
   //base: "../sea-modules/",
   alias: {
-
-
+    "info":"scripts/business/base/InfoController",
+    "extend":"scripts/business/base/ExtendController",
 
     "template": "templates/template",
     "routerMap":"scripts/config/routerMap",
     "router":"scripts/config/router",
     "director":"scripts/config/director",
-    "hashchange":"scripts/config/hashchange",
     "main":"scripts/main",
   },
   // 变量配置
