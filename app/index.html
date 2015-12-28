@@ -70,11 +70,38 @@
   // ISeaJs.use('./scripts/Index');
   ISeaJs.use('./scripts/main');
 </script>
+   <!--<ul>-->
+       <!--<li><a href="#/author">#/author</a></li>-->
+       <!--<li><a href="#/books">#/books</a></li>-->
+       <!--<li><a href="#/books/view/1">#/books/view/1</a></li>-->
+  <!--</ul>-->
+
+ <section data-route="author">Author Name</section>
+ <section data-route="books">Book1, Book2, Book3</section>
  <ul>
-      <li><a href="#/author">#/author</a></li>
-      <li><a href="#/books">#/books</a></li>
-      <li><a href="#/books/view/1">#/books/view/1</a></li>
-  </ul>
+   <li><a href="#/author">#/author</a></li>
+  <li><a href="#/books">#/books</a></li>
+ </ul>
+<div id="evt" style="width: 200px;height: 200px;background-color: #006666">
+<button data-jim-action="yo" style="width: 40%;height:10%;background-color: #0086b3;border: none;border-radius: 5px;"></button>
+  <button data-jim-action="jim" style="width: 40%;height:10%;background-color: #0086b3;border: none;border-radius: 5px;"></button>
+  <button data-jim-action="jimi" style="width: 40%;height:10%;background-color: #0086b3;border: none;border-radius: 5px;"></button>
+
+</div>
+<script type="application/javascript">
+
+//  var evt = $("#evt");
+//  evt.on("evtClick",function(){
+//    alert('what are you 点啥捏!');
+//  });
+//
+//  evt.click(function(){
+//    alert(1);
+//      evt.trigger("evtClick");
+//  });
+//
+//  console.log(evt);
+</script>
 
 <!-- build:js scripts/main.js -->
 
