@@ -1,5 +1,7 @@
 define(function(require, exports, module) {
 	  require('styles/userDetail.css');
+   var template =require("template");
+
   console.log(" this is what i'm doing .....这是会加载的info.........");
 
   var Controller = function(){
@@ -17,12 +19,14 @@ define(function(require, exports, module) {
     }
 
   };
+  Controller.prototype.init=function(){
 
 
+    var  user =template("app/templates/user/header",{sayhi:"这是InfoController 初始化信息..."});
+    console.log(user);
+    $('#jim-header').html(user);
 
-  //exports.sayS = function(msg){
-  //  console.log(" well done ! "+msg);
-  //}
+  }
   module.exports = Controller;
 
 });

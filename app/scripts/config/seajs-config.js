@@ -6,6 +6,7 @@ seajs.config({
   alias: {
     "info":"scripts/business/base/InfoController",
     "extend":"scripts/business/base/ExtendController",
+    "message":"scripts/business/base/MessageController",
 
     "template": "templates/template",
     "routerMap":"scripts/config/routerMap",
