@@ -148,7 +148,7 @@ define(function (require, exports, module) {
   $(document).on("click", "a", function() {
     if (window.location.hash == $(this).attr("href")) {
       //$(window).trigger('hashchange.application');
-      $(window).trigger('hashchange.app');
+      $(window).trigger('hashchange');
     }
   });
 
