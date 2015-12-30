@@ -1,0 +1,2 @@
+/*TMODJS:{"version":3,"md5":"e4318e535d765deeb48c3f875385790a"}*/
+template('app/templates/index/info','<div class="index-content-container"> <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div> </div> ');

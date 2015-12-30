@@ -1,3 +1,11 @@
-<section>{{iii}}</section>
-<div>{{hello}}</div>
-<div>{{hello}}</div>
+<ul class="jim-menu-container">
+  {{each menu as item }}
+  {{ if item.title=='index'}}
+
+  <li><a href="#/{{item.dist}}"><i class='fa fa-graduation-cap'></i></a> </li>
+  {{/if}}
+  {{ if item.title!='index'}}
+  <li><a href="#/{{item.dist}}">{{item.title}}</i></a> </li>
+  {{/if}}
+  {{/each}}
+</ul>

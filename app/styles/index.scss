@@ -1,0 +1,41 @@
+.jim-menu-container{
+  margin-left: 30px;
+  position: absolute;
+  bottom: 15px;
+  //background-color: darkgray;
+  font-size: .8em;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 800;
+  >li{
+    display: inline;
+    margin-left: 16px;
+    margin-top: 15px;
+    color: #FFFFFF;
+    >a{
+      color: ghostwhite;
+      text-decoration: none;
+    }
+  >a:hover{
+    text-decoration: none;
+    color: #00d6b2;
+    //font-size: large;
+  }
+
+  }
+
+}
+.index-content-container{
+  margin: 1px auto;
+  width: 98%;
+  border: none;
+
+
+
+   >div{
+       width: 140px;
+       height: 60px;
+       margin: 1px;
+       float: left;
+       background-color:#FFFFDF;
+  }
+}

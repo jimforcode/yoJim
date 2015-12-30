@@ -2,7 +2,6 @@ define(function(require, exports, module) {
 	  require('styles/userDetail.css');
    var template =require("template");
 
-  console.log(" this is what i'm doing .....这是会加载的info.........");
 
   var Controller = function(){
     var controller = this;
@@ -24,7 +23,7 @@ define(function(require, exports, module) {
 
     var  user =template("app/templates/user/header",{sayhi:"这是InfoController 初始化信息..."});
     console.log(user);
-    $('#jim-header').html(user);
+    //$('#jim-header').html(user);
 
   }
   module.exports = Controller;

@@ -24,7 +24,7 @@ define(function(require, exports, module) {
 
     var  user =template("app/templates/user/header",{sayhi:"这是MessageController 初始化信息..."});
     console.log(user);
-    $('#jim-header').html(user);
+    $('#jim-content').html(user);
 
   }
 

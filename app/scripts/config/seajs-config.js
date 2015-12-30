@@ -4,6 +4,7 @@
 seajs.config({
   //base: "../sea-modules/",
   alias: {
+    "index":"scripts/business/base/IndexController",
     "info":"scripts/business/base/InfoController",
     "extend":"scripts/business/base/ExtendController",
     "message":"scripts/business/base/MessageController",
