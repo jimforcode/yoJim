@@ -1,5 +1,6 @@
 define(function(require, exports, module) {
   require('styles/index.css');
+  var ajaxHandle= require("ajaxHandle");
   var template =require("template");
 
 
@@ -24,6 +25,26 @@ define(function(require, exports, module) {
     var  content =template("app/templates/index/info",{});
 
     $('#jim-content').html(content);
+    ajaxHandle({
+      url: '',
+      data: {
+        // keyword: keyword
+      }});
+// $.ajax({
+//   url: "/backendyo/",
+//   beforeSend: function( xhr ) {
+//     xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+//   }
+// })
+//   .done(function( data ) {
+//     if ( console && console.log ) {
+//       console.log( "Sample of data:", data.slice( 0, 100 ) );
+//     }
+//   });
+
+
+
+
   }
   module.exports = Controller;
 

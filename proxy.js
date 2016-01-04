@@ -30,7 +30,7 @@ var server = require('http').createServer(function(req, res) {
 	var local = "http://localhost:9000";
 	var test_server = "http://localhost:8080";
 
-	var target = req.url.indexOf("/startyo1/") != -1 ? test_server:local;
+	var target = req.url.indexOf("backendyo") != -1 ? test_server:local;
 
 
 	// console.log(req.url + "：" + target);

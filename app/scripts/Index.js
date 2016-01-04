@@ -43,4 +43,6 @@ define(function(require, exports, module) {
     var content =template("app/templates/user/userInfo",{users:users});
     $('#jim-content').html(content);
   }
+
+
 });

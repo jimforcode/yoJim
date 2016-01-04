@@ -8,6 +8,7 @@ seajs.config({
     "info":"scripts/business/base/InfoController",
     "extend":"scripts/business/base/ExtendController",
     "message":"scripts/business/base/MessageController",
+    "ajaxHandle":"scripts/model/AjaxHandle",
 
     "template": "templates/template",
     "routerMap":"scripts/config/routerMap",

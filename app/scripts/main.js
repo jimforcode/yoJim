@@ -57,7 +57,7 @@ define(function (require, exports, module) {
   // define the routing table.
   //
   var routes = {
-     'index':reloadWindow,
+     '/index':reloadWindow,
      '/seajsLoad': seajsLoad,
     '/message': Msg,
     '/top': {
@@ -98,11 +98,13 @@ define(function (require, exports, module) {
 
   // 若点击的a标签地址与当前地址相同时手动触发hashchange事件
   $(document).on("click", "a", function () {
+    
+
     if (window.location.hash == $(this).attr("href")) {
       $(window).trigger('hashchange');
     }
   });
 
-
+ 
 });
 
