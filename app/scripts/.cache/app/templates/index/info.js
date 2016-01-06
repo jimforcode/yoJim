@@ -1,0 +1,2 @@
+/*TMODJS:{"version":2,"md5":"4424d0b0c7bb8e48cd673caab64550da"}*/
+template('app/templates/index/info','<div class="index-content-container"> <div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy"> <input class="span2" size="16" type="text" value="12-02-2012"> <span class="add-on"><i class="icon-th"></i></span> </div> </div> ');

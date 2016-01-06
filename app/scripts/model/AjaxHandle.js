@@ -2,7 +2,7 @@
  * 系统 ajax 请求统一处理器
  */
 define(function(require, exports, module) {
- 
+
  	/**
 	 * 全局异步请求处理器
 	 */
@@ -28,8 +28,7 @@ define(function(require, exports, module) {
 
 		var defer = $.ajax(ajaxData);
 		return defer.then(function(data, status, xhr) {
-			console.log(data.zj);
-			// if (!data.status) data = $.parseJSON(data);
+ 			// if (!data.status) data = $.parseJSON(data);
 			if (!data.status) data =  data ;
 			// 如果状态非OK，手动触发reject方法使事件进入fail函数。
 			if (data.status == "ERROR") {

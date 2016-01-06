@@ -92,7 +92,7 @@ module.exports = function (grunt) {
       },
       test: {
         options: {
-          port: 9001,
+          port: 9000,
           open: false,
           logLevel: 'silent',
           host: 'localhost',
@@ -392,7 +392,7 @@ module.exports = function (grunt) {
     tmod: {
       template: {
         src: 'app/templates/**/*.html',
-        dest: 'app/scripts/template.js',
+        dest: 'app/templates/template.js',
         options: {
           combo: true,
           syntax: 'simple',

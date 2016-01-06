@@ -1,5 +1,7 @@
 define(function(require, exports, module) {
   require('styles/index.css');
+  require('styles/bootstrap.css');
+  require('styles/bootstrap-datetimepicker.css');
   var ajaxHandle= require("ajaxHandle");
   var template =require("template");
 
@@ -25,9 +27,12 @@ define(function(require, exports, module) {
     var  content =template("app/templates/index/info",{});
 
     $('#jim-content').html(content);
-    ajaxHandle({
-      url: '',
+    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+       var  dataValue =Date.parse($(".form_datetime").val());
+     ajaxHandle({
+      url: 'date',
       data: {
+        dataValue:dataValue
         // keyword: keyword
       }});
 // $.ajax({

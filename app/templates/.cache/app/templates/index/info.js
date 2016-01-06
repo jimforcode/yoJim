@@ -1,2 +1,2 @@
-/*TMODJS:{"version":3,"md5":"e4318e535d765deeb48c3f875385790a"}*/
-template('app/templates/index/info','<div class="index-content-container"> <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div> </div> ');
+/*TMODJS:{"version":9,"md5":"872d4b9c9c70e20d24782c7e87d5ef60"}*/
+template('app/templates/index/info','<div class="index-content-container"> <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime"> </div> ');
