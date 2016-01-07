@@ -21,7 +21,11 @@ define(function (require, exports, module) {
 
   };
  var reloadWindow = function(){
-      window.location.href=window.location.host+window.location.port;
+      //window.location.href=window.location.host+window.location.port;
+   var CurrentControlller = require('index');
+   currentControlller = new CurrentControlller();
+   loadActions = currentControlller.actions;
+   currentControlller.init();
  }
   var sub1Handle = function () {
     alert("sub1Handle!");
@@ -89,8 +93,7 @@ define(function (require, exports, module) {
   index.init();
 
   $(document).on("click", "[data-jim-action]", function (evt) {
-    alert(" clicked me!");
-    var _this = $(this),
+     var _this = $(this),
       actionName = _this.attr('data-jim-action');
     var action = loadActions[actionName];
     action && $.isFunction(action) && action.call(_this, evt);
@@ -98,13 +101,13 @@ define(function (require, exports, module) {
 
   // 若点击的a标签地址与当前地址相同时手动触发hashchange事件
   $(document).on("click", "a", function () {
-    
+
 
     if (window.location.hash == $(this).attr("href")) {
       $(window).trigger('hashchange');
     }
   });
 
- 
+
 });
 

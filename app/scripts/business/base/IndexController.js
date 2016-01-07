@@ -10,7 +10,19 @@ define(function(require, exports, module) {
     var controller = this;
     controller.actions={
       showUserInfo:function(){
-        alert(" 点嘛点!");
+        ajaxHandle({
+          url: 'date',
+          data: {
+            dataValue:dataValue
+            // keyword: keyword
+          }}).done(function(data){
+
+
+
+          console.log(data);
+        }).fail(function(err){}).always(function(data){
+          console.log("i 'm always ...");
+        });
       }
 
     }
@@ -24,17 +36,14 @@ define(function(require, exports, module) {
     var  menu =template("app/templates/index/index",{menu:menu});
     console.log(menu);
     $('#jim-header').html(menu);
-    var  content =template("app/templates/index/info",{});
+    var  content =template("app/templates/index/info",{date:Date.parse(new Date())});
 
     $('#jim-content').html(content);
-    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
-       var  dataValue =Date.parse($(".form_datetime").val());
-     ajaxHandle({
-      url: 'date',
-      data: {
-        dataValue:dataValue
-        // keyword: keyword
-      }});
+
+    $(".form_datetime").datetimepicker({format: 'yyyy/MM/dd hh:mm'});
+    //$(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+       //var  dataValue =Date.parse($(".form_datetime").val());
+
 // $.ajax({
 //   url: "/backendyo/",
 //   beforeSend: function( xhr ) {
