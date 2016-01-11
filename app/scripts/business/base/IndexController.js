@@ -40,7 +40,7 @@ define(function(require, exports, module) {
 
     $('#jim-content').html(content);
 
-    $(".form_datetime").datetimepicker({format: 'yyyy/MM/dd hh:mm'});
+    
     //$(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
        //var  dataValue =Date.parse($(".form_datetime").val());
 

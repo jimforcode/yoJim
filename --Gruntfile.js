@@ -62,17 +62,7 @@ module.exports = function (grunt) {
         options: {
           spawn: false
         }
-      },
-        livereload: {
-        options: {
-          livereload: 9000
-        },
-        files: [
-          '<%= config.app %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
-          '<%= config.app %>/images/{,*/}*'
-        ]
-      },
+      }
     },
 
     browserSync: {
@@ -89,11 +79,9 @@ module.exports = function (grunt) {
             '<%= config.app %>/{,*/}*.html',
             '.tmp/styles/{,*/}*.css',
             '<%= config.app %>/images/{,*/}*',
-            '.tmp/scripts/{,*/}*.js',
-            '.tmp/templates/{,*/}*.js',
-            '<%= config.app %>/templates/{,*/}*.js'
+            '.tmp/scripts/{,*/}*.js'
           ],
-          port: 9001,
+          port: 9000,
           server: {
             baseDir: ['.tmp', config.app],
             routes: {
@@ -417,7 +405,8 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
- 
+    console.log(">>>>>>>>>>>>>>>>---------=>这是serve")
+
     if (target === 'dist') {
       return grunt.task.run(['build', 'browserSync:dist']);
     }
@@ -433,7 +422,8 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('server', function (target) {
-     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
+    console.log(">>>>>>>>>>>>>>>>---------=>这是server 1  ")
+    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run([target ? ('serve:' + target) : 'serve']);
   });
 
